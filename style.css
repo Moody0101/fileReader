@@ -15,16 +15,18 @@ body {
   font-family: "Myriad pro", sans-serif;
 }
 p {
-    background: #191919;
+
+    border:  2px solid #ebebeb;
+    background: white;
     border-radius:  10px;
     width: 90%;
     height: 20px;
-    margin: 10px;
+    margin: 10px auto;
     padding:  20px;
     display:  flex;
-      justify-content: center;
+    justify-content: center;
     align-items: center;
-    color:  white;
+    color: black;
 }
 a {
     text-decoration: none;
@@ -32,12 +34,17 @@ a {
     background: black;
     padding: 10px;
     border-radius:  10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+a:hover {
+    background: #191919;
 }
 
 img {
     margin:  10px;
-    animation: rotate 1s  infinite;
 }
 
 
@@ -55,7 +62,7 @@ img {
     z-index: 1;
 }
 .App {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
     background: white;
     display: flex;
     width: 300px;
@@ -63,7 +70,7 @@ img {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-around;
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid #ebebeb;
@@ -77,7 +84,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
+    
 }
 
 
@@ -89,20 +96,4 @@ h1 {
     100% {
         opacity: 1;
     }
-}
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-
-    }
-    50%  {
-        transform:  rotate(100deg);
-    }
-    75% {
-        transform: rotate(-100deg);
-    } 
-    100% {
-         transform: rotate(0);
-    } 
-
 }
